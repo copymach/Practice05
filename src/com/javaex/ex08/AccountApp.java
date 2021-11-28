@@ -2,6 +2,8 @@ package com.javaex.ex08;
 
 import java.util.Scanner;
 
+//	코드 에러는 잡았으나 입금 출금 저장이 안된다 뭐가 문제일까?
+
 public class AccountApp {
 
     public static void main(String[] args) {
@@ -26,18 +28,18 @@ public class AccountApp {
                 case 1:
                     System.out.print("예금액>");
                     money = sc.nextInt();
-                    account.deposit(money);
+                    account.setDeposit(money);
                     break;
                 
                 case 2:
                     System.out.print("출금액>");
                     money= sc.nextInt();
-                    account.withdraw(money);
+                    account.setWithdraw(money);
                     break;
                     
                 case 3:
                     System.out.print("잔고액>");
-                    account.showBalance();
+                    account.ShowBalance();
                     break;
                 
                 case 4:

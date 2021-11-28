@@ -10,6 +10,7 @@ public class BaseApp {
         base.service("밤");
         base.service("오후");
         
+        System.out.println(base.toString());
     }
 
 }

@@ -23,8 +23,9 @@ public class Goods {
 	public String getName() {
 		return name;
 	}
-		
-	private void setName (String name) {
+	
+//	private -> public 으로 고쳤다
+	public void setName (String name) {
 		this.name = name;
 	}
 	

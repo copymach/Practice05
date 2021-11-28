@@ -2,20 +2,26 @@ package com.javaex.ex04;
 
 public class Base {
     
+		
 //	필드
-	private String day;
-	private String night;
-	private String afternoon;
 	
-	/*
-	this.day = day;
-    this.night = night;
-    this.afternoon = afternoon;
-    */
 	
-//	생성자
+//	낮 밤 오후 구분 
     public void service(String state) {
-        System.out.println(base.service(););
+    	
+//    	다른사람의 해결법도 체크해보자
+    	if(state.equals("낮")) {
+        	day();
+        }
+        else if(state.equals("밤")) {
+        	night();
+        }
+        else if(state.equals("오후")) {
+        	afternoon();
+        }
+    	
+    	System.out.println("파라미터3");
+    	
         //코드작성할것
         	
     }
@@ -41,9 +47,13 @@ public class Base {
 
 	@Override
 	public String toString() {
-		return "Base [day=" + day + ", night=" + night + ", afternoon=" + afternoon + "]";
+		return "Base [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
 	}
+
+
+	
     
-    
+   
 }
 

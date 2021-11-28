@@ -16,5 +16,14 @@ public class CConverter {
         return dollar * rate;
     }
     
+    
+	@Override
+	public String toString() {
+		return "CConverter [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
+	}
+    
+    
+    
 
 }

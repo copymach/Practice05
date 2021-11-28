@@ -10,6 +10,10 @@ public class PrintApp {
         print.printer(true);
         print.printer(5.7);
         print.printer("홍길동");
+     
+        
+//        toString으로 데이터 테스트
+//        System.out.println(print.toString());
         
     }
 
