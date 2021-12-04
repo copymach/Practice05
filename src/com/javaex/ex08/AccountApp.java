@@ -28,13 +28,13 @@ public class AccountApp {
                 case 1:
                     System.out.print("예금액>");
                     money = sc.nextInt();
-                    account.setDeposit(money);
+                    account.deposit(money);
                     break;
                 
                 case 2:
                     System.out.print("출금액>");
                     money= sc.nextInt();
-                    account.setWithdraw(money);
+                    account.withdraw(money);
                     break;
                     
                 case 3:

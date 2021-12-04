@@ -13,10 +13,45 @@ public class FriendApp {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("친구를 3명 등록해 주세요");
-        
+        String name, hp, school;
         
         
         //친구정보 3명 입력 로직 --> 반복문 사용
+        
+        int i=0; //do while 반복문에 써먹을 i값 초기화
+        do { 
+        	System.out.print("이름 :");
+        	name = sc.nextLine(); //name으로 이름 받고
+        	
+        	System.out.print("전번 :");
+        	hp = sc.nextLine();
+        	
+        	System.out.print("학교 :");
+        	school = sc.nextLine();
+        	System.out.println("---------------");
+        	
+        	
+        	friendArray[i] = new Friend(); //반복하는 i만큼 Friend 객체 생성 
+        	friendArray[i].setName(name); //name에 입력받은 name을 담는다
+        	friendArray[i].setHp(hp);
+        	friendArray[i].setSchool(school);
+        	i++;
+        }
+        while (i<friendArray.length); // 친구배열만든 갯수 만큼 반복
+        
+        
+        
+        //친구정보 출력
+        
+        for (i=0; i<friendArray.length; i++) {
+        	friendArray[i].showInfo();
+//        	System.out.println(friendArray[i]);
+        }
+        
+        
+        
+        
+        /* 반복문없이 만든 입력
         Friend Friend00 = new Friend();
         Friend Friend01 = new Friend();
         Friend Friend02 = new Friend();
@@ -29,9 +64,8 @@ public class FriendApp {
         
         System.out.print("학교 :" );
         Friend00.setSchool(sc.nextLine());
-        
-        
         System.out.println("===================");
+        
         System.out.print("이름 :" );        
         Friend01.setName(sc.nextLine());
         
@@ -40,9 +74,8 @@ public class FriendApp {
         
         System.out.print("학교 :" );
         Friend01.setSchool(sc.nextLine());
-        
-        
         System.out.println("===================");
+        
         System.out.print("이름 :" );        
         Friend02.setName(sc.nextLine());
         
@@ -51,10 +84,9 @@ public class FriendApp {
         
         System.out.print("학교 :" );
         Friend02.setSchool(sc.nextLine());
+        System.out.println("===================");
         
         
-        
-        int Friend;
         String FriendInfo;
         
         FriendInfo = sc.nextLine();
@@ -65,15 +97,18 @@ public class FriendApp {
         
         
         // 친구정보 출력
-        for (int i = 0; i < friendArray.length; i++) {
+        for (int i=0; i<friendArray.length; i++) {
             //친구정보 출력 메소드 호출
         	System.out.println(friendArray[i]);
         	Friend00.showInfo();
         	Friend01.showInfo();
         	Friend02.showInfo();
+       
         }
-
+		*/
+        
         sc.close();
+        
     }
 
 }

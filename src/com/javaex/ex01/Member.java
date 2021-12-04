@@ -18,7 +18,6 @@ public class Member {
 	
 //	생성자
 	public Member(String id, String name, int point) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.point = point;

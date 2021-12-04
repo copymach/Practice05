@@ -12,7 +12,7 @@ public class Print {
 
     public void printer(double val) {
     	System.out.println(val);
-    	return; //String int boolean 은 return 사용하는 메서드 void가 있어서 return 안써도 된다.
+//    	return; // String int boolean 은 return 사용하는 메서드 void가 있어서 return 안써도 된다.
     }
     
     public String printer(String val) {
