@@ -31,9 +31,19 @@ public class BookShop {
         // (1) 입력된 번호에 맞는 책을 찾아 대여 되었음(상태코드=0)을 체크 합니다.
         // 코드작성
         
-//        rent();
-        System.out.println(num+"이 대여되었습니다");
+        books[num-1].rent();
         
+//        Book.rent(books, num); 렌트2 
+        
+        System.out.println("*****도서 정보 출력하기******");
+        displayBookInfo(books);
+        
+        
+        
+        /*
+        rent();
+        System.out.println(num+"이 대여되었습니다");
+        */
         
 
         System.out.println("*****도서 정보 출력하기******");
@@ -47,7 +57,8 @@ public class BookShop {
         
     	//코드작성
     	for(int i=0;i<books.length; i++) {
-    		books[i].displayBookInfo();
+    		books[i].print();
+//    		books[i].displayBookInfo();
     	}
     	
     }
