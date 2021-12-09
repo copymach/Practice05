@@ -35,11 +35,6 @@ public class BookShop {
         
 //        Book.rent(books, num); 렌트2 
         
-        System.out.println("*****도서 정보 출력하기******");
-        displayBookInfo(books);
-        
-        
-        
         /*
         rent();
         System.out.println(num+"이 대여되었습니다");
