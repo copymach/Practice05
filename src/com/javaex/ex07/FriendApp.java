@@ -2,8 +2,10 @@ package com.javaex.ex07;
 
 import java.util.Scanner;
 
-//	일단 코드는 동작하는데 친구 정보출력 사이에 에러 메시지 뜬다
+//	일단 코드는 동작하는데 친구 정보출력 사이에 에러 메시지 뜬다 -> 반복문 쪽 오류 수정완료
 //	다른 사람 코드 보고 참고해서 수정하자
+
+
 
 public class FriendApp {
 
